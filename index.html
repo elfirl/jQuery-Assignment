@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="styles.css" />
+		<script src="https://code.jquery.com/jquery-2.1.4.js"></script> 
+		<script src="scripts.js"></script>
+	</head>
+	<body>
+		<div class="main-content">
+			<p>My main div. Watch me slide.</p>
+			<hr />
+		</div>
+		
+		<div>
+			<p>Another div.</p>
+		</div>
+
+		<hr />
+
+		<div class="replace-content">
+			<p>This is going to be replaced ...</p>
+		</div>
+
+		<hr />
+
+		<div>
+			<p>What is your name?
+			<form>
+				<input type="text" name="firstName" placeholder="First Name" /> <br />
+				<input type="text" name="lastName" placeholder="Last Name" /> <br />
+				<button onclick="inputName()">Submit</button>
+			</form>
+		</div>
+
+		<hr />
+
+		<p><button onClick="appendClass()">Add a class to all of the divs.</button></p>
+		<p><button onClick="slideContent()">Make the text slide in and out.</button></p>
+		<p><button onClick="replaceContent()">Replace some content.</button></p>
+	</body>
+</html>
