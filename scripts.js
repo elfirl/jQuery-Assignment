@@ -6,22 +6,25 @@
 
 
 // Selects all things in the first string and adds the class in the second string.
-function appendClass() {
+$("#append-class").click(function appendClass() {
 	$("div").addClass("new-class");
 	// $("div").toggleClass("new-class"); // This does the same as above, but the class is added/removed when the button is clicked.
-}
+	}
+);
 
 // Selecting by class has the same syntax as CSS: .ClassName
-function slideContent() {
+$("#slide-content").click(function slideContent() {
 	$(".main-content").slideToggle(); 
-}
+	}
+);
 
 // Grabs an item with a specific class, then replaces the content within that item.
-function replaceContent() {
+$("#replace-content").click(function replaceContent() {
 	$(".replace-content").html("With this new fancy content!");
-}
+	}
+);
 
-// There has to be a shorter way to write this.
-function inputName() {
+$("#input-name").click(function inputName() {
 	alert("Is your name really " + $("input[name=firstName").val() + " " + $("input[name=lastName").val() + "?");
-}
+	}
+);
